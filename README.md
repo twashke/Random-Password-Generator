@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A password generator designed to allow the user the ability to create a random password after answering a series of questions referring to what should be included.
+A password generator designed to allow the user the ability to create a random password after answering a series of questions about what to include in password.
 
 ## Table of Contents 
 
@@ -23,8 +23,8 @@ A password generator designed to allow the user the ability to create a random p
 
 ## Installation
 
-- Open [Random Password Generator](incliude link to web page) 
-- Or, open index.html in your internet browser.
+- Open [Random Password Generator](https://twashke.github.io/Random-Password-Generator/) 
+- Or, open index.html in the internet browser.
 
 ## Usage
 

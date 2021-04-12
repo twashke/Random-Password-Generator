@@ -221,7 +221,7 @@ function generatePassword() {
         issuedPassword.push(randomPassword);
         // Console log each option chosen
         console.log(randomPassword);
-    }
+    };
 
 // TURN PASSWORD INTO STRING
 // Take the issuedPassword array and create a string in the password variable
