@@ -32,7 +32,6 @@ A password generator designed to allow the user the ability to create a random p
 - Click the Generate Passcode button to answer a series of questions and create a random password.
 - Random password will be generated and displayed on the screen at the end.
 
-About Section \
 Password Length Prompt \
 ![Password Length Prompt](Assets/images/password_length_prompt.png) \
 \
