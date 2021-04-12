@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A password generator designed to allow the user the ability to create a random password after answering a series of questions about what to include in password.
+A password generator designed to allow the user the ability to create a random password after answering a series of questions about what to include in the password.
 
 ## Table of Contents 
 
@@ -14,12 +14,12 @@ A password generator designed to allow the user the ability to create a random p
 
 ## About the Project
 
-- This project was built to provide users the ability to create a random password that could include a variety of characters.
-- The motiviation for this project was to utilize Javascript to create a random password based on user inputs based on questions provided.
-- Prompts have been added for user to input character preferences for their password.
+- This project was built to provide users the ability to create a random password that could include a mixture of lowercase, uppercase, numbers or special characters.
+- The user is able to create a random password as many times as needed as long as at lease one of the four options is chosen.
+- The motiviation for this project was to utilize Javascript to create a random password generator that is based on user inputs.
+- Prompts have been added for user to input desired length and character preferences for their password.
 - Alerts have been added to notify the user of the choices they have made through each question.
 - Comments have been added to the Javascript file to make any future changes easier.
-- User is able to create a random password as many times as needed as long as the one of the four options is chosen.
 
 ## Installation
 
@@ -28,7 +28,9 @@ A password generator designed to allow the user the ability to create a random p
 
 ## Usage
 
+- Go to [Deployed Github Page](https://twashke.github.io/Random-Password-Generator/)
 - Click the Generate Passcode button to answer a series of questions and create a random password.
+- Random password will be generated and displayed on the screen at the end.
 
 About Section \
 Password Length Prompt \
