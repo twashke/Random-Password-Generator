@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A password generator designed to allow the user the ability to create a random password after answering a series of questions about what to include in the password.
+A password generator designed to allow the user the ability to create a random password after answering a series of questions about what type of characters to include.
 
 ## Table of Contents 
 
