@@ -34,19 +34,23 @@ function generatePassword() {
     // If user presses cancel it will send a message 
     if (!userLength) {
         alert("You chose to cancel, click Generate Passcode to restart!");
-
+        // Nothing will be returned in the Password section
+        return("");
     // If user chooses a number under 8, an error message 
     } else if (userLength<8) {
         alert("ERROR! Choose a number more than 8!");
-
+        // Rerun function so user can answer correctly
+        generatePassword();
     // If user chooses a number over 128, an error message
     } else if (userLength>128) {
         alert("ERROR! Choose  a number less than 128!");
-
+        // Rerun function so user can answer correctly
+        generatePassword();
     //  If the user inputs anything than a number, an error message 
     } else if (isNaN(userLength)) {
         alert("Choose a number between 8 and 128!");
-
+        // Rerun function so user can answer correctly
+        generatePassword();
     // Warning to choose at least one option.  
     } else {
         alert("Please answer the next four questions about your password.\nYou must answer YES (OK) to AT LEAST one of the questions, \notherwise your password will not be generated!");
