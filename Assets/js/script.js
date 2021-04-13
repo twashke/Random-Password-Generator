@@ -27,84 +27,84 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
 // USER PROMPTS AND ALL POSSIBLE ERRORS
     // Opens prompt to user to choose a password length 
-    userLength = window.prompt("Choose a number between 8 and 128 to create a random password!");
+    userLength = prompt("Choose a number between 8 and 128 to create a random password!");
     // Console log user length chosen
     console.log("Password length " + userLength);
 
     // If user presses cancel it will send a message 
     if (!userLength) {
-        window.alert("You chose to cancel, click Generate Passcode to restart!");
+        alert("You chose to cancel, click Generate Passcode to restart!");
 
     // If user chooses a number under 8, an error message 
     } else if (userLength<8) {
-        window.alert("ERROR! Choose a number more than 8!");
+        alert("ERROR! Choose a number more than 8!");
 
     // If user chooses a number over 128, an error message
     } else if (userLength>128) {
-        window.alert("ERROR! Choose  a number less than 128!");
+        alert("ERROR! Choose  a number less than 128!");
 
     //  If the user inputs anything than a number, an error message 
     } else if (isNaN(userLength)) {
-        window.alert("Choose a number between 8 and 128!");
+        alert("Choose a number between 8 and 128!");
 
     // Warning to choose at least one option.  
     } else {
-        window.alert("Please answer the next four questions about your password.\nYou must answer YES (OK) to AT LEAST one of the questions, \notherwise your password will not be generated!");
+        alert("Please answer the next four questions about your password.\nYou must answer YES (OK) to AT LEAST one of the questions, \notherwise your password will not be generated!");
 
 // CRITERIA QUESTIONS FOR PASSWORD
         // Does the user want lowercase letters?
-        lowercase = window.confirm("Do you want lowercase letters in your password?\nPlease press OK for Yes and Cancel for No.");
+        lowercase = confirm("Do you want lowercase letters in your password?\nPlease press OK for Yes and Cancel for No.");
         // Console log user answer
         console.log("Lowercase letters " + lowercase);
             // If they selected OK to lowercase letters return message saying YES was chosen
             if (lowercase === true) {
-                window.alert("You chose YES to lowercase letters!");
+                alert("You chose YES to lowercase letters!");
             // If they selected Cancel to lowercase letters return message saying NO was chosen
             } if (lowercase === false) {
-                window.alert("You chose NO to lowercase letters!");
+                alert("You chose NO to lowercase letters!");
             };
 
         // Does the user want uppercase letters?
-        uppercase = window.confirm("Do you want uppercase letters in your password?\nPlease press OK for Yes and Cancel for No.");
+        uppercase = confirm("Do you want uppercase letters in your password?\nPlease press OK for Yes and Cancel for No.");
         // Console log user answer
         console.log("Upercase letters " + uppercase);
             // If they selected OK to uppercase letters return message saying YES was chosen
             if (uppercase === true) {
-                window.alert("You chose YES to uppercase letters!");
+                alert("You chose YES to uppercase letters!");
             // If they selected Cancel to uppercase letters return message saying NO was chosen
             } if (uppercase === false) {
-                window.alert("You chose NO to uppercase letters!");
+                alert("You chose NO to uppercase letters!");
             };
 
         // Does the user want numbers?
-        numeric = window.confirm("Do you want numbers in your password?\nPlease press OK for Yes and Cancel for No.");
+        numeric = confirm("Do you want numbers in your password?\nPlease press OK for Yes and Cancel for No.");
         // Console log user answer
         console.log("Numbers " + numeric);
             // If they selected OK to numbers return message saying YES was chosen
             if (numeric === true) {
-                window.alert("You chose YES to numbers!");
+                alert("You chose YES to numbers!");
             // If they selected Cancel to numbers return message saying NO was chosen
             } if (numeric === false) {
-                window.alert("You chose NO to numbers!");
+                alert("You chose NO to numbers!");
             };
 
         // Does the user want special characters?
-        special = window.confirm("Do you want special characters in your password?\nPlease press OK for Yes and Cancel for No.");
+        special = confirm("Do you want special characters in your password?\nPlease press OK for Yes and Cancel for No.");
         // Console log user answer
         console.log("Special characters " + special);
             // If they selected OK to special characters return message saying YES was chosen
             if (special === true) {
-                window.alert("You chose YES to special characters!");
+                alert("You chose YES to special characters!");
             // If they selected Cancel to special characters return message saying NO was chosen
             } if (special === false) {
-                window.alert("You chose NO to special characters!");
+                alert("You chose NO to special characters!");
             };
     };
 
 // ALL POSSIBLE USER SELECTIONS AND HOW TO HANDLE
     // If user doesn't include confirm at least one of the questions, send alert and restart function.
     if (!lowercase && !uppercase && !numeric && !special) {
-        userpassword = window.alert("You must choose yes to at least one of the four options!");
+        userpassword = alert("You must choose yes to at least one of the four options!");
         generatePassword();
     // If all options are chosen
     } else if (lowercase && uppercase && numeric && special) {
