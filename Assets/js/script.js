@@ -7,14 +7,11 @@ var uppercaseArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O
 var numericArray = ["0","1","2","3","4","5","6","7","8","9"];
 var specialArray = ["!","@","#","$","%","^","&","*","_"];
 
-// issuedPassword Array once random password has been chosen
-var issuedPassword = [];
-
 // Write password to the #password input
 function writePassword() {
     // Password created from generate Password function
     var password = generatePassword();
-    // Input text in password section
+    // // Input text in password section
     var passwordText = document.querySelector("#password");
     // Value to include is equal to the password variable
     passwordText.value = password;
@@ -23,11 +20,15 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// Function 
+// Function to Generate Passcode
 function generatePassword() {
+    // Variable declared for userPassword
+    var userPassword = "";
+    // Variable declared for issuedPassword array
+    var issuedPassword = [];
 // USER PROMPTS AND ALL POSSIBLE ERRORS
     // Opens prompt to user to choose a password length 
-    userLength = prompt("Choose a number between 8 and 128 to create a random password!");
+    var userLength = prompt("Choose a number between 8 and 128 to create a random password!");
     // Console log user length chosen
     console.log("Password length " + userLength);
 
@@ -53,6 +54,7 @@ function generatePassword() {
         generatePassword();
     // Warning to choose at least one option.  
     } else {
+        // Alert about upcoming questions and warning about having to choose at least one.
         alert("Please answer the next four questions about your password.\nYou must answer YES (OK) to AT LEAST one of the questions, \notherwise your password will not be generated!");
 
 // CRITERIA QUESTIONS FOR PASSWORD
@@ -235,3 +237,4 @@ function generatePassword() {
     // Return password to complete the function
     return password;
 };
+
