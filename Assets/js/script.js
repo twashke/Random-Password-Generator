@@ -34,7 +34,7 @@ function generatePassword() {
     // If user presses cancel it will send a message 
     if (!userLength) {
         alert("You chose to cancel, click Generate Passcode to restart!");
-        // Nothing will be returned in the Password section
+        // Refresh page for user
         location.reload();
     // If user chooses a number under 8, an error message 
     } else if (userLength<8) {
