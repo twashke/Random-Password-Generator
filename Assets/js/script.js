@@ -35,7 +35,7 @@ function generatePassword() {
     if (!userLength) {
         alert("You chose to cancel, click Generate Passcode to restart!");
         // Nothing will be returned in the Password section
-        return("");
+        location.reload();
     // If user chooses a number under 8, an error message 
     } else if (userLength<8) {
         alert("ERROR! Choose a number more than 8!");
@@ -204,14 +204,14 @@ function generatePassword() {
     // If only numeric is chosen
     } else if (numeric) {
         // Use numericArray for Password
-        userPassword = numeric;
+        userPassword = numericArray;
         // Console log userPassword created
         console.log(userPassword);
 
     // If only special is chosen 
     } else if (special) {
         // Use specialArray for Password
-        userPassword = special;
+        userPassword = specialArray;
         // Console log userPassword created
         console.log(userPassword);          
     };
